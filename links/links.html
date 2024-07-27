@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces dinámicos</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="./styles/links.css">
+</head>
+<body>
+    <header class="headerTop">
+        <div class="home">
+            <a href="../index.html">
+                <img src="../assets/icons/prismaticos.png" alt="goHome">
+                <h2>GO HOME</h2>
+            </a>
+        </div>
+        <nav class="nav">
+            <a id="reloj" href="../reloj/reloj.html">
+                <img src="../assets/icons/calendario.png" alt="reloj"/>
+            </a>
+            <a id="meteorologia" href="../meteorología/meteorologia.html">
+                <img src="../assets/icons/weather-forecast.png" alt="meteorologia"/>
+            </a>
+            <a id="contraseñas" href="../contraseñas/contraseñas.html">
+                <img src="../assets/icons/candado.png" alt="candado"/>
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="title">
+            <h2>Añade tu enlace de interés<span><img src="../assets/icons/enlace.png" alt="enlace"></span></h2>
+        </div>
+        <button id="añadir-acceso-directo">Añadir Enlace</button>
+        <div id="listaEnlacesContainer" class="listaEnlacesContainer">
+            <ul></ul>
+        </div>
+        <div id="enlacesContainer" class="modal hidden">
+            <div class="modal-content">
+                <div class="enlaces">
+                    <div id="nombreContenedor">
+                        <input type="text" id="name" placeholder="Nombre de tu enlace" required>
+                    </div>
+                    <div id="urlContenedor">
+                        <input type="text" id="url" placeholder="Pega aquí la URL" required>
+                    </div>
+                    <div id="btnContenedor">
+                        <button id="add-link-btn">Añadir enlace</button>
+                        <button id="close-modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<script src="./javascript/links.js"></script>
+<script src="../imagenesRandom/imagenesrandom.js"></script>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta del Tiempo</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="./styles/meteorologia.css">
+</head>
+<body>
+  <header class="headerTop">
+    <div class="home">
+      <a href="../index.html">
+        <img src="../assets/icons/prismaticos.png" alt="goHome">
+        <h2>GO HOME</h2>
+      </a>
+    </div>
+    <nav class="nav">
+      <a id="reloj" href="../reloj/reloj.html">
+        <img src="../assets/icons/calendario.png" alt=""/>
+      </a>
+      <a id="links" href="../links/links.html">
+        <img src="../assets/icons/enlace.png" alt=""/>
+      </a>
+      <a id="contraseñas" href="../contraseñas/contraseñas.html">
+        <img src="../assets/icons/candado.png" alt=""/>
+      </a>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="favorites">
+      <ul class="favoritesList"></ul>
+    </div>
+    <div class="chooseWeather">
+      <form id="weatherForm" onsubmit="event.preventDefault(); getWeather();">
+        <label for="city">¿De qué ciudad del mundo quieres conocer el tiempo?</label>
+        <div class="input">
+          <div><img src="../assets/icons/busqueda-de-lupa.png" alt="lupa" id="lupa"/>  
+          <input type="search" name="city" id="city" placeholder="Introduce una ciudad"></div>
+          <input type="submit" value="consultar">
+        </div>
+      </form>
+      <button id="getCurrentLocationWeather">Consultar el clima de mi ubicación actual</button>
+      <div class="weather">
+        <div id="currentWeather" class="currentWeather"></div>
+        <ul id="forecastWeather" class="forecastWeather"></ul>
+        <span id="star" style="display: none;" title="Agregar a favoritos">☆</span>
+      </div>
+    </div>
+  </main>
+  <script src="../imagenesRandom/imagenesrandom.js"></script>
+  <script src="./javascript/meteorologia.js"></script>
+</body>
+</html>

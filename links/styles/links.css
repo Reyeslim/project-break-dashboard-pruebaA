@@ -1,0 +1,168 @@
+/*---------------------------------------ENLACES----------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    color: black;
+    text-shadow: 1px 1px 2px white, -1px -1px 2px white;
+    border-radius: 8px;
+    max-width: 900px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.537);
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el width */
+    padding: 10px; /* Añade padding para hacer los inputs más grandes */
+    font-size: 16px; /* Ajusta el tamaño de la fuente si es necesario */
+}
+
+.enlaces div {
+    margin: 10px;
+}
+
+#btnContenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.title h2 {
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+span img {
+    width: 30px;
+    filter: invert(1);
+    vertical-align: middle;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 500px;
+    width: 80%;
+}
+
+.hidden {
+    display: none;
+}
+
+.listaEnlacesContainer{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 350px;
+    width: 800px;
+}
+
+.listaEnlacesContainer li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #ffffff93;
+    font-weight: 700;
+}
+ul{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.deletebtn{
+    position: absolute;
+    padding: 0px;
+    margin:0px;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    right: -10px;
+    color: black;
+    font-weight: 700;
+    border: none;
+    border-radius: 50%;
+    font-size: 12px;
+    background-color: #ffffff93;
+    display: none;
+}
+
+.enlace:hover .deletebtn{
+    display: block;
+}
+
+.deletebtn:hover{
+    background-color: #007bff;
+}
+
+
+.listaEnlacesContainer li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#close-modal{
+    padding:0;
+    margin:0; 
+    width: 100px;
+}
+
+#btnContenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon{
+    width: 30px;
+}
+
+.enlace{
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para el botón cuando está deshabilitado */
+#add-link-btn:disabled {
+    background-color: #d6d6d6; 
+    color: #a0a0a0;
+    cursor: not-allowed; 
+  }

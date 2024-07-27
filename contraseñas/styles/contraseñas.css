@@ -1,0 +1,79 @@
+/*---------------------------------------CONTRASEÑAS----------------------------------*/
+
+/*generador de contraseñas*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.passwordForm {
+    border: 1px solid black;
+    color: black;
+    /* text-shadow: 1px 1px 2px white, -1px -1px 2px white; */
+    border-radius: 8px;
+    max-width: 900px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.537);
+
+}
+
+.passwordForm div {
+    margin: 10px;
+    gap: 50px;
+}
+
+input[type="number"]{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*"Crea tu contraseña segura <span>candadito</span>"*/
+.title h2 {
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+span img {
+    width: 30px;
+    filter: invert(1);
+
+}
+
+
+/*"Contraseña generada <span>********</span>"*/
+.passwordResult{
+    font-weight: 700;
+}
+
+.passwordResult span{
+    color: green;
+}
+
+.hidden{
+    display: none;
+}
+
+/*"Contraseña copiada correctamente"*/
+#confirmationMessage {
+    font-size: 15px;
+    background-color: #d4edda; 
+    color: #155724; 
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    padding: 10px;
+    margin-left: 10px;
+    display: none;
+}
+
+
